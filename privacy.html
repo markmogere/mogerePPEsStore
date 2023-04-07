@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport", content="width=device-width ,initial-scale=1.0">
+    <title>MOGERE PPE STORES</title>
+    <link rel="stylesheet" href="HOMEPAGE.CSS">
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: verdana;
+box-sizing: border-box;
+z-index: 1;
+background-color: rgb(240, 240, 240);
+  }
+  .tc {
+  
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: left;
+    font-family: verdana;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    line-height: 30px;
+  
+  }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+    </style>
+
+  </head>
+ 
+  <body>
+    <body>           
+      <div class="menu-bar">  
+      <ul><li> <a href="HOMEPAGE.HTML"> Home</a></li>  
+          <li><a href="#">Our Products</a><div class="sub-menu-1">
+              <ul><li class="hover-me" ><a href="HEAD.HTML">Head Protection</a>
+                
+              
+              </li>
+                <li class="hover-me" ><a href="EYE.HTML">Eye Protection</a>
+                  
+                </li> 
+                <li class="hover-me" ><a href="HAND.HTML">Hand Protection</a>
+                  
+                
+                </li>
+                <li class="hover-me" ><a href="RESPIRATORY.HTML">Respiratory</a>
+                  
+                </li> 
+                <li class="hover-me" ><a href="FEET.HTML">Feet Protection</a>
+                  
+                </li>
+                <li class="hover-me" ><a href="FALLING.HTML">Fall Protection</a>
+                  
+                </li> 
+                <li class="hover-me" ><a href="HI-VIs.HTML">Hi-Vis</a>
+                  
+                </li>
+                <li class="hover-me" ><a href="EAR.HTML">Ear Protection</a>
+                  
+                </li> 
+             
+              </ul>
+              </li>
+          <li><a href="About.html">About Us</a></li>
+             
+  
+                
+          <li><a href="contactus.html">Get In Touch</a> </li>
+            
+              <li> <a href="LOGIN.html"> Blog</a></li>
+              
+      </ul>
+      </div>
+    
+      </div>	
+    <h4 style="text-align: center;">MOGERE PPE STORES Privacy Policy</h4>
+    <form class="tc">
+<p> 
+ <br> <strong>Introduction</strong>  <br>
+  At MOGERE PPE STORESt, we are committed to protecting the privacy of our customers and visitors to our website. This privacy policy outlines how we collect, use,
+  and protect personal information you provide to us through our website. By accessing or using our website, you agree to the terms of this privacy policy.
+  
+ <br> <strong>Information Collection</strong> <br>
+  We collect personal information such as name, address, phone number, and email address when you place an order, register for an account, or contact us through our 
+  website. We also collect information about your browsing behavior, such as the pages you visit and the links you click on. This information is collected using 
+  cookies and similar technologies.
+  
+ <br> <strong>Information Use</strong> <br>
+  We use the personal information we collect to process and fulfill your orders, provide customer service, and communicate with you about your account or orders. 
+  We may also use your personal information to send you promotional emails about our products and services. If you do not wish to receive these emails, you can 
+  unsubscribe at any time by clicking the "unsubscribe" link at the bottom of the email.
+  
+ <br> <strong>Information Sharing</strong> <br>
+  We may share your personal information with third-party service providers who help us process orders and provide customer service. We may also share your 
+  personal information with law enforcement or other third parties in response to a subpoena, court order, or other legal request. We will never sell or rent 
+  your personal information to third parties for marketing purposes.
+  
+  <br> <strong>Data Security</strong> <br>
+  We take data security seriously and use industry-standard measures to protect your personal information from unauthorized access, disclosure, or modification.
+  However, no method of transmission over the internet or method of electronic storage is 100% secure, so we cannot guarantee absolute security.
+  
+ <br> <strong>Third-Party Links</strong> <br>
+  Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these websites. We encourage you to 
+  read the privacy policies of these websites before providing them with any personal information.
+  
+ <br> <strong>Children's Privacy</strong> <br>
+  Our website is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under the age of 13. 
+  If we become aware that we have collected personal information from a child under the age of 13, we will delete the information as soon as possible.
+  
+ <br> <strong>Changes to this Privacy Policy</strong> <br>
+  We may update this privacy policy from time to time. If we make significant changes to the policy, we will post a notice on our website and update 
+  the effective date at the top of the policy. Your continued use of our website after any changes to the policy will be deemed acceptance of those changes.
+  
+ <br> <strong>Contact Us</strong> <br>
+  If you have any questions or concerns about this privacy policy or our use of your personal information, please contact us at <strong>markorori1997@gmail.com</strong>.
+</p>
+
+
+    </form>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<footer>
+  <div class="footer-columns">
+    <div class="column1">
+      <h3>Navigation</h3>
+      <ul>
+        <li ><a href="About.html">About Us</a></li>
+  
+        </ul>
+        <h3>Subscribe to our weekly Newsletter</h3>
+        <form class="sub-form">
+          
+            <input class="hd" type="email" class="form-control" name="email" placeholder="Enter your email" required>
+          
+          <button class="btn" type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <h3 class="h3">Follow Us on our social media platforms</h3>
+        <ul>
+          <li><a href="https://twitter.com/intent/follow?screen_name=FT">Twitter</a></li>
+          <li><a href="https://www.instagram.com/markmogere2/ ">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/markmogere">LinkedIn</a></li>
+          </ul>     
+    </div>
+    <div class="column2">
+     <h3>Contact Us</h3>
+      <p class="ct">Call/text Us: <a href="tel:1234567890">0742584191</a></p>
+    <p class="ct">Email Us: <a href="mailto:info@example.com">markorori1997@gmail.com</a></p>
+    <p class="ct">Address: 87634 Aqswa Mosque, Kisauni Street, Mombasa County</p>
+    <li class="hover-me" ><a href="#">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.954117765606!2d39.68215811417444!3d-4.029782245906172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1840128314847ffd%3A0xac0d1179c3988962!2sMasjid%20Aqswa!5e0!3m2!1sen!2ske!4v1680677699284!5m2!1sen!2ske" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </iframe></a></li>
+      
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <ul class="footer-links">
+     
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+      <li><a href="cookies.html">Cookie Policy</a></li>
+      <li><a href="copyright.html">Copyright Policy</a></li>
+ 
+    </ul>
+  </div>
+  <hr>      
+  <li class="cr">&copy; MOGERE PPE STORES. All Rights Reserved</li>
+</footer>
+  </body>
+</html>

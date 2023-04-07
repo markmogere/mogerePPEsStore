@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport", content="width=device-width ,initial-scale=1.0">
+<title> MOGERE PPE STORES</title>
+<link rel="stylesheet" href="HAND.CSS">
+    </head>
+    <body>           
+    <div class="menu-bar">  
+    <ul><li> <a href="HOMEPAGE.HTML"> Home</a></li> 
+    </ul>
+    </div>
+
+<!-- HTML code for search input and results -->
+<input class="srch" type="text" id="search-input" placeholder="Search...">
+<ul id="search-results"></ul>
+<script>// JavaScript code for search input and results
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const items = document.querySelectorAll('ul li');
+  
+  function highlightMatches(searchTerm, text) {
+    const pattern = new RegExp(searchTerm, 'gi');
+    return text.replace(pattern, `<mark>${searchTerm}</mark>`);
+  }
+  
+  function displayResults(results) {
+    const items = results.map(result => `<li>${result}</li>`).join('');
+    searchResults.innerHTML = items;
+  }
+  
+  function search() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const results = []; // Replace with your search function
+    const highlightedResults = results.map(result => highlightMatches(searchTerm, result));
+    displayResults(highlightedResults);
+  }
+  
+  searchInput.addEventListener('keydown', event => {
+    if (event.key === 'Enter') {
+      search();
+    }
+  });
+  </script>
+
+   
+
+    <script>var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("menu-bar").style.marginTop = "0";
+  } else {
+    document.querySelector("menu-bar").style.marginTop = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+    <div class="container1">
+      <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/DISPOSABLE GLOVES.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h4>HDX Nitrile Disposable Gloves</h4>
+        <p > convenient choice for a variety of applications, including cleaning, food handling, and medical procedures.
+          <h5>Features</h5>
+          These gloves are made of nitrile material, which is durable, puncture-resistant, and provides excellent tactile sensitivity. <br>
+          They are latex-free and powder-free, making them a great option for individuals with latex allergies <br>
+          The gloves come in a box of 100 and are designed for single-use only <br>
+        <h5>Cost: Ksh 1,499</h5>
+        </p>
+				
+			</div>
+		</div></a>
+    
+		<a href="OVERVIEW-STUDENT-LIFE.HTML"><div class="image-container">
+			<img class="image" src="image/CHEMICAL-RESISTANT GLOVES.jpg" alt="Image 3" width="auto" height="auto">
+			<div class="overlay">
+				<h4>Ansell Sol-Vex 37-175 Gloves</h4>
+				<p> The gloves are reusable and offer excellent abrasion resistance, making them a reliable option for applications such as chemical handling, petrochemicals, and food processing
+        <h5>Features</h5>
+        Made of a high-performance nitrile compound that offers superior resistance to a wide range of chemicals, including solvents, oils, and acids.<br>
+        A diamond grip pattern that enhances grip and control, even in wet or oily conditions<br>
+        
+<h5>Cost: Ksh 4,999</h5>
+        </p>
+			</div>
+		</div></a>
+		<a href="OUR-STAFF.HTML"><div class="image-container">
+			<img class="image" src="image/CUT-RESISTANT GLOVES.jpg" alt="Image 3">
+			<div class="overlay">
+				<h4>MaxiFlex Cut 34-8743 Gloves</h4>
+				<p> 
+          ideal for applications such as automotive assembly, construction, and manufacturing. 
+           <h5>Features</h5> 
+          Soft and flexible body that conforms to the user's face, providing a comfortable and secure fit <br>
+          A clear lens that provides excellent visibility and protection from chemical splashes and other hazards. <br>
+          The lens is treated with Uvextreme® anti-fog coating to prevent fogging and ensure clear vision in all conditions <br>
+          Comfortable and adjustable headband that ensures a secure and comfortable fit.
+<h5>Cost: Ksh 1,999</h5>
+        </p>
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/HEAT-RESISTANT GLOVES.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h4>Tillman 820B Premium Top Grain Cowhide Welding Gloves</h4>
+        <p >  designed for use in high-heat applications such as welding, metal fabrication, and foundry work
+        <h5>Features</h5>
+        Made of premium top-grain cowhide leather and have a reinforced thumb for added durability.
+        <br>
+        Have a cotton/foam lining that provides excellent heat insulation and comfort. 
+        <br>
+        The gloves have a gauntlet cuff design that offers extended wrist protection and can be cinched to prevent debris from entering the glove.
+        <h5>Cost: Ksh 3,199</h5>
+        </p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/ELECTRICALLY-GLOVE.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h4>Salisbury E0011B/9 Insulated Electrical Gloves</h4>
+        <p >  designed for use in electrical applications such as live line work, high-voltage testing, and electrical maintenance.
+           <h5>Features</h5>
+          made of a high-quality dielectric natural rubber that provides superior electrical insulation and protection against electric shock. 
+          <br>
+          contoured shape and rolled cuffs for a comfortable fit and easy donning and doffing.
+        <h5>Cost: Ksh 2,299</h5>
+        </p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/BOXING GLOVES.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h4>Everlast Pro Style Training Gloves</h4>
+        <p >  designed for use in boxing and other combat sports such as kickboxing, MMA, and Muay Thai
+           <h5>Features</h5>
+           made of high-quality synthetic leather and feature a multi-layered foam padding system that provides excellent shock absorption and protection for the hands and wrists.
+            <br>
+            have a full mesh palm that enhances breathability and comfort, and an adjustable hook-and-loop closure that ensures a secure fit.
+            <h5>Cost: Ksh 4,499</h5>
+        </p>
+				
+			</div>
+		</div></a>
+    
+    
+    
+	</div>
+    <footer>
+      <div class="footer-columns">
+        <div class="column1">
+          <h3>Navigation</h3>
+          <ul>
+            <li ><a href="About.html">About Us</a></li>
+
+            </ul>
+            <h3>Subscribe to our weekly Newsletter</h3>
+            <form class="sub-form">
+              
+                <input class="hd" type="email" class="form-control" name="email" placeholder="Enter your email" required>
+              
+              <button class="btn" type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <h3 class="h3">Follow Us on our social media platforms</h3>
+            <ul>
+              <li><a href="https://twitter.com/intent/follow?screen_name=FT">Twitter</a></li>
+              <li><a href="https://www.instagram.com/markmogere2/ ">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/markmogere">LinkedIn</a></li>
+              </ul>     
+        </div>
+        <div class="column2">
+         <h3>Contact Us</h3>
+          <p class="ct">Call/text Us: <a href="tel:1234567890">0742584191</a></p>
+        <p class="ct">Email Us: <a href="mailto:info@example.com">markorori1997@gmail.com</a></p>
+        <p class="ct">Address: 87634 Aqswa Mosque, Kisauni Street, Mombasa County</p>
+        <li class="hover-me" ><a href="#">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.954117765606!2d39.68215811417444!3d-4.029782245906172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1840128314847ffd%3A0xac0d1179c3988962!2sMasjid%20Aqswa!5e0!3m2!1sen!2ske!4v1680677699284!5m2!1sen!2ske" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe></a></li>
+          
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <ul class="footer-links">
+         
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="copyright.html">Copyright Policy</a></li>
+        </ul>
+      </div>
+      <hr>      
+      <li class="cr">&copy; MOGERE PPE STORES. All Rights Reserved</li>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+    </body>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  
+
+</html>

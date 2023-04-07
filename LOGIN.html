@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport", content="width=device-width ,initial-scale=1.0">
+    <title>MOGERE PPE STORES</title>
+ <link rel="stylesheet" href="HOMEPAGE.CSS">
+      
+  </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <body>
+    <h1 style="text-align: center;">MOGERE PPE STORES</h1>
+    <form class="login-form">
+      <div class="form-column">
+        <h2>Login with</h2>
+        <div class="icons">
+          <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue"><ion-icon name="logo-google"></ion-icon></a>
+      </div>
+      </div>
+    
+      <div class="form-column">
+        <h2>LOGIN</h2>
+        <label for="email"><i class="material-icons">email</i></label>
+        <input class="hd" type="email" id="email" name="email" placeholder="Email" required>
+        <label for="password"><i class="material-icons">lock</i></label>
+        <input class="hd" type="password" id="password" name="password" placeholder="Password" required> <br>
+        <input class="check" type="checkbox" id="myCheckbox" name="myCheckbox" value="isChecked" >
+        <label for="myCheckbox">Remember Me</label> <br>
+        <p> <strong>Forgot Password?</strong>  </p>
+        <button class="btn" type="submit" id="login">LOGIN</button>
+
+        <p><strong>Call or Whatsapp:</strong>0742584191 <br> <br> 
+          <strong>Email:</strong>markorori1997@gmail.com</p> <br>
+          <p>Don't have an account? <a href="SIGNUP.html">Sign Up</a> </p>
+      </div>
+      
+    </form>
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+      function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      }
+      
+      function acceptCookies() {
+        setCookie("cookies_accepted", "true", 365);
+        var cookiesPopup = document.getElementById("cookies-popup");
+        cookiesPopup.style.display = "none";
+      }
+    </script>
+  <script>
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(";");
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == " ") c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+    
+    function checkCookiesAccepted() {
+      var cookiesAccepted = getCookie("cookies_accepted");
+      if (cookiesAccepted == null) {
+        var cookiesPopup = document.getElementById("cookies-popup");
+        cookiesPopup.style.display = "block";
+      }
+    }
+    window.onload = checkCookiesAccepted;
+  </script>
+    <script>
+      const emailInput = document.getElementById('email');
+      const passwordInput = document.getElementById('password');
+      const loginButton = document.getElementById('login');
+
+      emailInput.addEventListener('input', updateButtonState);
+      passwordInput.addEventListener('input', updateButtonState);
+
+      function updateButtonState() {
+        if (emailInput.value && passwordInput.value) {
+          loginButton.disabled = false;
+        } else {
+          loginButton.disabled = true;
+        }
+      }
+    </script>
+<footer>
+  <div class="footer-columns">
+    <div class="column1">
+      <h3>Navigation</h3>
+      <ul>
+        <li ><a href="About.html">About Us</a></li>
+ 
+        </ul>
+        <h3>Subscribe to our weekly Newsletter</h3>
+        <form class="sub-form">
+          
+            <input class="hd" type="email" class="form-control" name="email" placeholder="Enter your email" required>
+          
+          <button class="btn" type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <h3 class="h3">Follow Us on our social media platforms</h3>
+        <ul>
+          <li><a href="https://twitter.com/intent/follow?screen_name=FT">Twitter</a></li>
+          <li><a href="https://www.instagram.com/markmogere2/ ">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/markmogere">LinkedIn</a></li>
+          </ul>     
+    </div>
+    <div class="column2">
+     <h3>Contact Us</h3>
+      <p class="ct">Call/text Us: <a href="tel:1234567890">0742584191</a></p>
+    <p class="ct">Email Us: <a href="mailto:info@example.com">markorori1997@gmail.com</a></p>
+    <p class="ct">Address: 87634 Aqswa Mosque, Kisauni Street, Mombasa County</p>
+    <li class="hover-me" ><a href="#">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.954117765606!2d39.68215811417444!3d-4.029782245906172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1840128314847ffd%3A0xac0d1179c3988962!2sMasjid%20Aqswa!5e0!3m2!1sen!2ske!4v1680677699284!5m2!1sen!2ske" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </iframe></a></li>
+      
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <ul class="footer-links">
+     
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+      <li><a href="cookies.html">Cookie Policy</a></li>
+      <li><a href="copyright.html">Copyright Policy</a></li>
+   
+    </ul>
+  </div>
+  <hr>      
+  <li class="cr">&copy; MOGERE PPE STORES. All Rights Reserved</li>
+</footer>
+  </body>
+</html>

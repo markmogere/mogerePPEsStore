@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport", content="width=device-width ,initial-scale=1.0">
+	<title>MOGERE PPE STORES</title>
+	<style>
+		.loading-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			font-family: sans-serif;
+			color: #555;
+		}
+		
+		.loading-message {
+			margin-top: 20px;
+		}
+		
+		.loader {
+			border: 10px dotted #0dc243;
+			border-top: 10px dotted #a50c91;
+			border-radius: 50%;
+			width: 80px;
+			height: 80px;
+			animation: spin 2s linear infinite;
+		}
+		
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+	</style>
+</head>
+<body>
+	<div class="loading-container">
+		<div class="loader"></div>
+		<div class="loading-message"> <strong>Loading, please wait...</strong> </div>
+	</div>
+
+	<script>
+		setTimeout(function() {
+			window.location.href = "HOMEPAGE.HTML";
+		}, 3000);
+	</script>
+</body>
+</html>

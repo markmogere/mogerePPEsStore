@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport", content="width=device-width ,initial-scale=1.0">
+<title> MOGERE PPE STORES</title>
+<link rel="stylesheet" href="HOMEPAGE.CSS">
+    </head>
+    <body>           
+    <div class="menu-bar">  
+    <ul><li> <a href="HOMEPAGE.HTML"> Home</a></li>  
+        <li><a href="#">Our Products</a><div class="sub-menu-1">
+            <ul><li class="hover-me" ><a href="HEAD.HTML">Head Protection</a>
+              
+            
+            </li>
+              <li class="hover-me" ><a href="EYE.HTML">Eye Protection</a>
+                
+              </li> 
+              <li class="hover-me" ><a href="HAND.HTML">Hand Protection</a>
+                
+              
+              </li>
+              <li class="hover-me" ><a href="RESPIRATORY.HTML">Respiratory</a>
+                
+              </li> 
+              <li class="hover-me" ><a href="FEET.HTML">Feet Protection</a>
+                
+              </li>
+              <li class="hover-me" ><a href="FALLING.HTML">Fall Protection</a>
+                
+              </li> 
+              <li class="hover-me" ><a href="HI-VIs.HTML">Hi-Vis</a>
+                
+              </li>
+              <li class="hover-me" ><a href="EAR.HTML">Ear Protection</a>
+                
+              </li> 
+           
+            </ul>
+            </li>
+        <li><a href="About.html">About Us</a></li>
+           
+
+              
+        <li><a href="contactus.html">Get In Touch</a> </li>
+            <li> <a href="LOGIN.html"> Blog</a></li>
+            
+    </ul>
+    </div>
+	
+    </div>	
+
+<!-- HTML code for search input and results -->
+
+
+    <div class="slideshow-container">
+      <a href="#"><img class="mySlides" src="image/BASEBALL.jpg"width="100%" height="100%">
+        
+      </a>
+      
+      <a href="#"> <img class="mySlides" src="image/BIKE.jpg"width="100%" height="100%">
+     
+      </a>
+     
+     <a href="#"><img class="mySlides" src="image/blt.jpg"width="100%" height="100%">
+    
+    </a>
+
+     <a href="#"><img class="mySlides" src="image/ANCHORAGE CONNECTOR.jpg"width="100%" height="100%">
+      
+     </a>
+      
+  
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+  
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+
+      </div>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+  
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+  
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+  
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000, slideIndex += 1); 
+      }
+    </script>
+    <script>var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("menu-bar").style.marginTop = "0";
+  } else {
+    document.querySelector("menu-bar").style.marginTop = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <div class="container1">
+      <h1>QUICK LINKS</h1>
+    <a href="FEET.HTML"><div class="image-container">
+			<img class="image" src="image/WORK-SHOES.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SHOES</h2>
+        
+				
+			</div>
+		</div></a>
+    <a href="HAND.HTML"><div class="image-container">
+			<img class="image" src="image/CUT-RESISTANT GLOVES.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>GLOVES</h2>
+        
+				
+			</div>
+		</div></a>
+    <a href="HEAD.HTML"><div class="image-container">
+			<img class="image" src="image/BASEBALL1.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>HELMETS</h2>  </div>
+      </div></a>
+        <a href="EAR.HTML"><div class="image-container">
+          <img class="image" src="image/gun.jpg" alt="Image 1" width="auto" height="auto">
+          <div class="overlay">
+            <h2>EARMUFFS</h2>
+            
+            
+          </div>
+        </div></a>
+        <a href="RESPIRATORY.HTML"><div class="image-container">
+          <img class="image" src="image/RESPIRATOR.jpg" alt="Image 1" width="auto" height="auto">
+          <div class="overlay">
+            <h2>RESPIRATORS</h2>
+            
+            
+          </div>
+        </div></a>
+        <a href="RESPIRATORY.HTML"><div class="image-container">
+          <img class="image" src="image/REBREATHERS.jpg" alt="Image 1" width="auto" height="auto">
+          <div class="overlay">
+            <h2>REBREATHERS</h2>
+            
+            
+          </div>
+        </div></a>
+        <a href="HI-VIs.HTML"><div class="image-container">
+          <img class="image" src="image/HI-VI-JACKET.jpg" alt="Image 1" width="auto" height="auto">
+          <div class="overlay">
+            <h2>Hi-Vis</h2>
+            
+            
+          </div>
+        </div></a>
+        <a href="HI-VIs.HTML"><div class="image-container">
+          <img class="image" src="image/ffgg.jpg" alt="Image 1" width="auto" height="auto">
+          <div class="overlay">
+            <h2>COLLECTIONS</h2>
+            
+            
+          </div>
+        </div></a>
+        <a href="FALLING.HTML"><div class="image-container">
+          <img class="image" src="image/ANCHORAGE CONNECTOR.jpg" alt="Image 1" width="auto" height="auto">
+          <div class="overlay">
+            <h2>ANCHORS</h2>
+            
+            
+          </div>
+        </div></a>
+        <a href="HI-VIs.HTML"><div class="image-container">
+          <img class="image" src="image/TRAFFIC CONES.jpg" alt="Image 1" width="auto" height="auto">
+          <div class="overlay">
+            <h2>TRAFFIC CONES</h2>
+            
+            
+          </div>
+        </div></a>
+        <a href="FALLING.HTML"><div class="image-container">
+          <img class="image" src="image/LANYARDS.jpg" alt="Image 1" width="auto" height="auto">
+          <div class="overlay">
+            <h2>LANYARDS</h2>
+            
+            
+          </div>
+        </div></a>
+   
+    
+    
+	</div>
+    <footer>
+      <div class="footer-columns">
+        <div class="column1">
+          <h3>Navigation</h3>
+          <ul>
+            <li ><a href="About.html">About Us</a></li>
+    
+            </ul>
+            <h3>Subscribe to our weekly Newsletter</h3>
+            <form class="sub-form">
+              
+                <input class="hd" type="email" class="form-control" name="email" placeholder="Enter your email" required>
+              
+              <button class="btn" type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <h3 class="h3">Follow Us on our social media platforms</h3>
+            <ul>
+              <li><a href="https://twitter.com/intent/follow?screen_name=FT">Twitter</a></li>
+              <li><a href="https://www.instagram.com/markmogere2/ ">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/markmogere">LinkedIn</a></li>
+              </ul>     
+        </div>
+        <div class="column2">
+         <h3>Contact Us</h3>
+          <p class="ct">Call/text Us: <a href="tel:1234567890">0742584191</a></p>
+        <p class="ct">Email Us: <a href="mailto:info@example.com">markorori1997@gmail.com</a></p>
+        <p class="ct">Address: 87634 Aqswa Mosque, Kisauni Street, Mombasa County</p>
+        <li class="hover-me" ><a href="#">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.954117765606!2d39.68215811417444!3d-4.029782245906172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1840128314847ffd%3A0xac0d1179c3988962!2sMasjid%20Aqswa!5e0!3m2!1sen!2ske!4v1680677699284!5m2!1sen!2ske" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe></a></li>
+          
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <ul class="footer-links">
+         
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="copyright.html">Copyright Policy</a></li>
+         
+        </ul>
+      </div>
+      <hr>      
+      <li class="cr">&copy; MOGERE PPE STORES. All Rights Reserved</li>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  <div id="cookies-popup">
+    <p>We use cookies to ensure you get the best experience on our website. By continuing to use our site, you agree to our use of cookies.</p>
+    <button id="accept-cookies">Accept</button>
+    <a href="cookies.html"><button class="ckbtn">View</button></a>
+  </div>
+  <script>const cookiesPopup = document.getElementById('cookies-popup');
+    const acceptCookiesBtn = document.getElementById('accept-cookies');
+    
+    function acceptCookies() {
+      cookiesPopup.style.display = 'none';
+      localStorage.setItem('cookiesAccepted', 'true');
+    }
+    
+    if (localStorage.getItem('cookiesAccepted') === 'true') {
+      cookiesPopup.style.display = 'none';
+    } else {
+      cookiesPopup.style.display = 'block';
+      acceptCookiesBtn.addEventListener('click', acceptCookies);
+    }
+    </script>
+  
+
+
+
+    </body>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  
+
+</html>

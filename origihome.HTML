@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport", content="width=device-width ,initial-scale=1.0">
+<title> MOGERE FOUNDATION</title>
+<link rel="stylesheet" href="HOMEPAGE.CSS">
+    </head>
+    <body>           
+    <div class="menu-bar">  
+    <ul><li> <a href="HOMEPAGE.HTML"> Home</a></li>  
+        <li><a href="#">Our Products</a><div class="sub-menu-1">
+            <ul><li class="hover-me" ><a href="OVERVIEW-STUDENT-LIFE.HTML">Head Protection</a>
+              <div class="sub-menu-2">  
+                <ul>
+                    <li> <a href="#">Bike Helmets</a> </li>
+                    <li> <a href="#">Motorcycle Helmets</a> </li>
+                    <li> <a href="#">Welding Helmets</a> </li>
+                    <li> <a href="#">Baseball Caps</a> </li>
+                    <li> <a href="#">Headbands & Sweatbands</a> </li>
+
+                </ul>
+            </div>
+            
+            </li>
+              <li class="hover-me" ><a href="OVERVIEW-STUDENT-LIFE.HTML">Eye Protection</a>
+                <div class="sub-menu-2"> 
+                <ul><li> <a href="#">Laser Safety Goggles</a> </li>
+                  <li> <a href="#">Welding Goggles</a> </li>
+                  <li> <a href="#">Safety Spectacles</a> </li>
+                  <li> <a href="#">Face Shields</a> </li>
+                  <li> <a href="#">Chemical Splash Goggles</a> </li>
+                  <li> <a href="#">Polarized Safety Glasses</a> </li>
+              </ul>
+          </div>
+              </li> 
+              <li class="hover-me" ><a href="OVERVIEW-STUDENT-LIFE.HTML">Hand Protection</a>
+                <div class="sub-menu-2"> 
+                  <ul><li> <a href="#">Disposable Golves</a> </li>
+                    <li> <a href="#">Chemical-Resistant Gloves</a> </li>
+                    <li> <a href="#">Cut-Resistant Gloves</a> </li>
+                    <li> <a href="#">Heat-Resistant Gloves</a> </li>
+                    <li> <a href="#">Electrically Insulated Gloves</a> </li>
+                    <li> <a href="#">Sports Gloves(Boxing)</a> </li>
+                </ul>
+            </div>
+              
+              </li>
+              <li class="hover-me" ><a href="OVERVIEW-STUDENT-LIFE.HTML">Respiratory</a>
+                <div class="sub-menu-2"> 
+                  <ul><li> <a href="#">Respirators</a> </li>
+                    <li> <a href="#">Air Purifying Respirators</a> </li>
+                    <li> <a href="#">Supplied-Air Respirators</a> </li>
+                    <li> <a href="#">Escape Resipirators</a> </li>
+                    <li> <a href="#">Scuba Regulators</a> </li>
+                    <li> <a href="#">Rebreathers</a> </li>
+                </ul>
+            </div>
+              </li> 
+              <li class="hover-me" ><a href="OVERVIEW-STUDENT-LIFE.HTML">Feet Protection</a>
+                <div class="sub-menu-2"> 
+                  <ul><li> <a href="#">Steel-toe Boots</a> </li>
+                    <li> <a href="#">Work Shoes</a> </li>
+                    <li> <a href="#">Safety Sneakers</a> </li>
+                    <li> <a href="#">Slip-resistant Shoes</a> </li>
+                    <li> <a href="#">Protective Overshoes</a> </li>
+                    <li> <a href="#">Chemical-resistant Shoes</a> </li>
+
+                </ul>
+            </div>
+              </li>
+              <li class="hover-me" ><a href="OVERVIEW-STUDENT-LIFE.HTML">Fall Protection</a>
+                <div class="sub-menu-2"> 
+                  <ul><li> <a href="#">Safety Harness</a> </li>
+                    <li> <a href="#">Self-retracting Lifelines</a> </li>
+                    <li> <a href="#">Lanyards</a> </li>
+                    <li> <a href="#">Anchorage Connectors</a> </li>
+       
+                </ul>
+            </div>
+              </li> 
+              <li class="hover-me" ><a href="OVERVIEW-STUDENT-LIFE.HTML">Hi-Vis</a>
+                <div class="sub-menu-2"> 
+                  <ul><li> <a href="#">Vests</a> </li>
+                    <li> <a href="#">Jackets</a> </li>
+                    <li> <a href="#">Arm Bands</a> </li>
+                    <li> <a href="#">Anchorage Connectors</a> </li>
+                    <li> <a href="#">Traffic Cones</a> </li>
+                    <li> <a href="#">Pants</a> </li>
+                </ul>
+            </div>
+              </li>
+              <li class="hover-me" ><a href="OVERVIEW-STUDENT-LIFE.HTML">Ear Protection</a>
+                <div class="sub-menu-2"> 
+                  <ul><li> <a href="#">Earplugs</a> </li>
+                    <li> <a href="#">Earmuffs</a> </li>
+                    <li> <a href="#">Noise Cancelling Headphones</a> </li>
+                    <li> <a href="#">Communication Earmuffs</a> </li>
+                   
+                </ul>
+            </div>
+              </li> 
+           
+            </ul>
+            </li>
+        <li><a href="#">About Us</a></li>
+           
+
+              
+        <li><a href="#">Get In Touch</a> </li>
+            <li> <a href="#"> FAQs</a></li>
+            <li> <a href="#"> Blog</a></li>
+            
+    </ul>
+    </div>
+	
+    </div>	
+
+<!-- HTML code for search input and results -->
+<input class="srch" type="text" id="search-input" placeholder="Search...">
+<ul id="search-results"></ul>
+<script>// JavaScript code for search input and results
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const items = document.querySelectorAll('ul li');
+  
+  function highlightMatches(searchTerm, text) {
+    const pattern = new RegExp(searchTerm, 'gi');
+    return text.replace(pattern, `<mark>${searchTerm}</mark>`);
+  }
+  
+  function displayResults(results) {
+    const items = results.map(result => `<li>${result}</li>`).join('');
+    searchResults.innerHTML = items;
+  }
+  
+  function search() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const results = []; // Replace with your search function
+    const highlightedResults = results.map(result => highlightMatches(searchTerm, result));
+    displayResults(highlightedResults);
+  }
+  
+  searchInput.addEventListener('keydown', event => {
+    if (event.key === 'Enter') {
+      search();
+    }
+  });
+  </script>
+
+    <div class="slideshow-container">
+      <a href="#"><img class="mySlides" src="image/atdtsed.jpg"width="100%" height="100%"></a>
+      
+      <a href="#"> <img class="mySlides" src="image/fdvfgdsv.jpg"width="100%" height="100%"></a>
+     
+     <a href="#"><img class="mySlides" src="image/helll.jpg"width="100%" height="100%"></a>
+
+     <a href="#"><img class="mySlides" src="image/gjk.jpg"width="100%" height="100%">
+     </a>
+      
+  
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+  
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+
+      </div>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+  
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+  
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+  
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000, slideIndex += 1); 
+      }
+    </script>
+    <script>var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("menu-bar").style.marginTop = "0";
+  } else {
+    document.querySelector("menu-bar").style.marginTop = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+<div id="cookies-popup">
+  <h1 style="text-align: center; width: 100%;">Cookie Policy</h1>
+  <p class="pp">
+    
+	<p>This website uses cookies to enhance your user experience. By continuing to browse this site, you consent to the use of cookies.</p>
+	
+	<h2>What are Cookies?</h2>
+	<p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used in order to make websites work more efficiently and provide a better user experience. Cookies help website owners to understand how users interact with their website by collecting and reporting information anonymously.</p>
+	
+	<h2>Types of Cookies</h2>
+	<p>This website uses the following types of cookies:</p>
+	<ul>
+		<li><strong>Essential Cookies:</strong> These cookies are necessary for the website to function properly and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in, or filling in forms.</li>
+		<li><strong>Analytical/Performance Cookies:</strong> These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site.</li>
+		<li><strong>Advertising Cookies:</strong> These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.</li>
+		<li><strong>Functionality Cookies:</strong> These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third-party providers whose services we have added to our pages.</li>
+	</ul>
+	
+	<h2>Information Collected</h2>
+	<p>We may collect information through the use of cookies, including:</p>
+	<ul>
+		<li>Your IP address</li>
+		<li>Your browser type and version</li>
+		<li>The pages of our website that you visit</li>
+		<li>The time and date of your visit</li>
+		<li>The time spent on those pages and other statistics</li>
+	</ul>
+	
+	<h2>Data Sharing</h2>
+	<p>We may share the information collected through cookies with third-party entities, such as advertisers or analytics companies. However, this information is anonymous and does not personally identify you.</p>
+	
+	<h2>User Consent</h2>
+	<p>By using this website, you consent to the use of cookies as described in this Cookie Policy.</p>
+	
+	<h2>Opt-Out Options</h2>
+	<p>You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. If you disable or refuse cookies, please note that some parts of this website may become inaccessible or not function properly.</p>
+	
+	<h2>Updates</h2>
+	<p>This Cookie Policy may be updated from time to time. Any changes will be posted on this page, so please check back regularly for updates.</p>
+	
+	<h2>Contact Information</h2>
+	<p>If you have any questions or concerns about this Cookie Policy, please contact us at [email protected]</p></p>
+  <button class="cook" onclick="acceptCookies()">Accept</button>
+</div>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script>
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+  
+  function acceptCookies() {
+    setCookie("cookies_accepted", "true", 365);
+    var cookiesPopup = document.getElementById("cookies-popup");
+    cookiesPopup.style.display = "none";
+  }
+</script>
+<script>
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(";");
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == " ") c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+function checkCookiesAccepted() {
+  var cookiesAccepted = getCookie("cookies_accepted");
+  if (cookiesAccepted == null) {
+    var cookiesPopup = document.getElementById("cookies-popup");
+    cookiesPopup.style.display = "block";
+  }
+}
+window.onload = checkCookiesAccepted;
+</script>
+    <div class="container1">
+      <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/hkfkj.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+     <img class="image" src="image/cdfjh.jpg" alt="Image 2" width="auto" height="auto">
+     <div class="overlay">
+       <h2>RESOURCEFUL LIBRARY</h2>
+       <p >Comfortable seating, and natural lighting.</p>
+     </div>
+   </div></a>
+		<a href="OVERVIEW-STUDENT-LIFE.HTML"><div class="image-container">
+			<img class="image" src="image/helllll.jpg" alt="Image 3" width="auto" height="auto">
+			<div class="overlay">
+				<h3>THRIVING EXCELLENCE</h3>
+				<p>Student life</p>
+			</div>
+		</div></a>
+		<a href="OUR-STAFF.HTML"><div class="image-container">
+			<img class="image" src="image/tuu.jpg" alt="Image 3">
+			<div class="overlay">
+				<h3>OUR TEAM</h3>
+				<p>Meet our dedicated staff</p>
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/adv.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/asrfa.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/blt.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/cdfjh.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/dgd.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/etays.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/fjk.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/fv.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/f.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/gh.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    <a href="facilities.HTML"><div class="image-container">
+			<img class="image" src="image/fadf.jpg" alt="Image 1" width="auto" height="auto">
+			<div class="overlay">
+				<h2>SPACIOUS  CLASSROOMS  </h2>
+        <p >Fitted with interactive whiteboards</p>
+				
+			</div>
+		</div></a>
+    
+    
+	</div>
+    <footer>
+      <div class="footer-columns">
+        <div class="column1">
+          <h3>Navigation</h3>
+          <ul>
+            <li ><a href="#">About Us</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Our Mission</a></li>
+            </ul>
+            <h3>Subscribe to our weekly Newsletter</h3>
+            <form class="sub-form">
+              
+                <input class="hd" type="email" class="form-control" name="email" placeholder="Enter your email" required>
+              
+              <button class="btn" type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <h3 class="h3">Follow Us on our social media platforms</h3>
+            <ul>
+              <li><a href="https://twitter.com/intent/follow?screen_name=FT">Twitter</a></li>
+              <li><a href="https://www.instagram.com/markmogere2/ ">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/markmogere">LinkedIn</a></li>
+              </ul>     
+        </div>
+        <div class="column2">
+         <h3>Contact Us</h3>
+          <p class="ct">Call/text Us: <a href="tel:1234567890">0742584191</a></p>
+        <p class="ct">Email Us: <a href="mailto:info@example.com">markorori1997@gmail.com</a></p>
+        <p class="ct">Address: 87634 Aqswa Mosque, Kisauni Street, Mombasa County</p>
+        <li class="hover-me" ><a href="#">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.954117765606!2d39.68215811417444!3d-4.029782245906172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1840128314847ffd%3A0xac0d1179c3988962!2sMasjid%20Aqswa!5e0!3m2!1sen!2ske!4v1680677699284!5m2!1sen!2ske" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe></a></li>
+          
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <ul class="footer-links">
+         
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Copyright Policy</a></li>
+          <li><a href="#">Testimonials/Awards</a></li>
+        </ul>
+      </div>
+      <hr>      
+      <li class="cr">&copy; M&L Fashion. All Rights Reserved</li>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+    </body>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  
+
+</html>
